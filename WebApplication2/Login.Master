@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.Master.cs" Inherits="WebApplication2.Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/VerticalMenu.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 94px;
+            margin-top: 188px;
+        }
+    </style>
+</head>
+<body <%--style ="background-color:#EEFFAA;"--%>>
+    <marquee style="margin-bottom: 0px"></marquee>
+ 
+
+        <div style="position: fixed; background-color: #00FF00; top: 49px; left: -10px; width: 100%; height: 162px;">
+            <img src="Images/cog.jpg" style="position:absolute;width:100%;height:100%" />
+        </div>
+      <div style="position: fixed;  top: 266px; left: 20px; width: 236px; height: 82%;">
+          <table>
+            
+              
+             
+          <ul>
+                    <li><a class="active" href="#Home.aspx">Home</a></li>
+                    <li><a href="AddEmp.aspx">Add Employee</a></li>
+                   <li><a href="UpdateEmp.aspx">Update Employee</a></li>
+                   <li><a href="DeleteEmp.aspx">Delte Employee</a></li>
+              <li> <a href="First.aspx">First page</a></li>
+</ul>
+              </table>
+      </div>
+    <form id="form1" runat="server">
+          <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="Blue"></asp:Label>
+       <asp:Button ID="Button1" runat="server" CssClass="auto-style1" Text="Logout" Width="175px" OnClick="Button1_Click" />
+          
+         
+
+      <div style="position: fixed; /*background-color: #FF00FF;*/ top: 261px; left: 290px; width: 88%; height: 80%;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+       
+    </form>
+        </div>
+           
+            </body>
+</html>
